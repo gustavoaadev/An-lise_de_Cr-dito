@@ -7,7 +7,7 @@ O case consiste em uma base de dados com cerca de 345 mil linhas contendo inform
 A data-base adotada para todos os cálculos foi 31 de janeiro de 2026.
 
 ## Base de Dados
-- ~345 linhas de Dados
+- ~345 mil linhas de Dados
 - Período: 2022–2025
 - Variáveis: valor, taxa, pagamentos
 
@@ -54,7 +54,7 @@ A taxa foi ponderada pelo valor de aquisição de cada parcela, que representa o
 - Etapa 3 — Inadimplência cash:
 A fórmula usada foi 1 - (valor_pago / valor_a_receber), aplicada apenas sobre as parcelas já vencidas antes de 31/01/2026. Parcelas sem registro de pagamento foram tratadas como não pagas. O cálculo foi feito para a carteira total, por convênio e por mês de vencimento.
 - Etapa 4 — Diagnóstico:
-O spread estimado foi calculado como a diferença entre a taxa média e a inadimplência por convênio. Quando esse número fica negativo, significa que o custo do risco está consumindo mais do que o retorno contratado — o fundo está destruindo valor naquele grupo.
+O spread estimado foi calculado como a diferença entre a taxa média e a inadimplência por convênio. Quando esse número fica negativo, significa que o custo do risco está consumindo mais do que o retorno contratado, o fundo está destruindo valor naquele grupo.
 
 ## Conclusão
 Trabalhar nesse case foi uma experiência que misturou análise de dados com uma tentativa real de entender o que os números estavam dizendo sobre um negócio.  
